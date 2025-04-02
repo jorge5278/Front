@@ -18,7 +18,7 @@ jobs:
           node-version: 18
 
       - name: Install dependencies
-        run: npm install --legacy-peer-deps
+        run: npm install
 
       - name: Run Lint
         run: npm run lint
@@ -29,8 +29,8 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Verificar salida
-        run: ls -la dist
+      - name: List output files
+        run: ls -l dist
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
