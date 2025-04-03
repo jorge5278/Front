@@ -46,8 +46,8 @@ jobs:
 
       - name: Run Selenium Tests
         run: |
-          python test_login_guest.py
-          python test_vista_users.py
+          test/test_login_guest.py
+          test/test_vista_users.py
 
       - name: Build
         run: npm run build
